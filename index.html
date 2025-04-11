@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FashionVibe Clothing Store</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background-image: url('https://images.unsplash.com/photo-1521334884684-d80222895322');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      color: #fff;
+    }
+
+    header {
+      background-color: rgba(0, 0, 0, 0.7);
+      padding: 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 3em;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      background-color: rgba(0, 0, 0, 0.8);
+      padding: 15px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .hero-section {
+      text-align: center;
+      padding: 100px 20px;
+    }
+
+    .hero-section h2 {
+      font-size: 2.5em;
+      margin-bottom: 20px;
+    }
+
+    .hero-section button {
+      padding: 10px 20px;
+      font-size: 1em;
+      cursor: pointer;
+      background-color: #fff;
+      color: #000;
+      border: none;
+      border-radius: 5px;
+    }
+
+    .video-section {
+      padding: 40px 20px;
+      background-color: rgba(0, 0, 0, 0.6);
+      text-align: center;
+    }
+
+    .video-section video {
+      width: 80%;
+      max-width: 800px;
+      border-radius: 10px;
+    }
+
+    .products {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      padding: 40px 20px;
+      background-color: rgba(255, 255, 255, 0.1);
+    }
+
+    .product-card {
+      background-color: rgba(255, 255, 255, 0.9);
+      color: #000;
+      margin: 20px;
+      padding: 20px;
+      border-radius: 10px;
+      width: 250px;
+      text-align: center;
+    }
+
+    .product-card img {
+      width: 100%;
+      border-radius: 10px;
+    }
+
+    .product-card button {
+      margin-top: 10px;
+      padding: 10px;
+      background-color: #000;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .contact-section {
+      padding: 40px 20px;
+      background-color: rgba(0, 0, 0, 0.7);
+    }
+
+    .contact-section form {
+      display: flex;
+      flex-direction: column;
+      max-width: 500px;
+      margin: auto;
+    }
+
+    .contact-section input,
+    .contact-section textarea {
+      margin: 10px 0;
+      padding: 10px;
+      border-radius: 5px;
+      border: none;
+    }
+
+    .contact-section button {
+      padding: 10px;
+      background-color: #fff;
+      color: #000;
+      font-weight: bold;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: rgba(0, 0, 0, 0.8);
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>FashionVibe</h1>
+    <p>Your Trendy Clothing Destination</p>
+  </header>
+
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#products">Products</a>
+    <a href="#video">Lookbook</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section class="hero-section" id="home">
+    <h2>New Collection Just Dropped!</h2>
+    <p>Explore our latest arrivals for all seasons.</p>
+    <button>Shop Now</button>
+  </section>
+
+  <section class="video-section" id="video">
+    <h2>Lookbook Preview</h2>
+    <video controls>
+      <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </section>
+
+  <section class="products" id="products">
+    <div class="product-card">
+      <img src="https://via.placeholder.com/250x300?text=Jacket" alt="Jacket">
+      <h3>Stylish Jacket</h3>
+      <p>$89.99</p>
+      <button>Add to Cart</button>
+    </div>
+    <div class="product-card">
+      <img src="https://via.placeholder.com/250x300?text=Jeans" alt="Jeans">
+      <h3>Classic Jeans</h3>
+      <p>$59.99</p>
+      <button>Add to Cart</button>
+    </div>
+    <div class="product-card">
+      <img src="https://via.placeholder.com/250x300?text=Dress" alt="Dress">
+      <h3>Elegant Dress</h3>
+      <p>$74.99</p>
+      <button>Add to Cart</button>
+    </div>
+  </section>
+
+  <section class="contact-section" id="contact">
+    <h2>Contact Us</h2>
+    <form>
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <textarea rows="5" placeholder="Your Message"></textarea>
+      <button type="submit">Send</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 FashionVibe. All Rights Reserved.</p>
+  </footer>
+</body>
+
+</html>
